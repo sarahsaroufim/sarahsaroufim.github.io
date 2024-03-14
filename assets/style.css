@@ -1,28 +1,53 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
 :root {
-    --font-size: 20px;
+    --font-bebas: "Bebas Neue", sans-serif;
+    --font-size: 1em;
     --gutter: calc(var(--font-size) * 2);
+    --yellow: rgb(255, 184, 0);
+    --orange: rgb(255, 108, 75);
+    --green: rgb(66, 255, 119);
+    --pink: rgb(205, 75, 147);
+}
+
+a {
+    text-decoration: underline;
 }
 
 
 body {
-    font-family: 'Courier New', Courier, monospace;
-    font-size: var(--font-size);
-    padding-bottom: calc(var(--gutter) * 3);
+    font-family: var(--font-bebas);
+    padding-bottom: calc(3 * var(--gutter));
     padding-left: var(--gutter);
     padding-right: var(--gutter);
-    padding-top: calc(var(--gutter) * 3);
+    padding-top: var(--gutter);
     row-gap: var(--gutter);
 }
 
 h1 {
-    font-size: calc(var(--font-size) * 2);
+    font-size: calc(3.2 * var(--font-size));
+    padding-bottom: calc(2.2 * var(--gutter));
+    line-height: calc(0.85 * var(--font-size));
 }
 
 .project-title {
-    font-size: calc(2 * var(--font-size));
+    font-size: calc(1.8 * var(--font-size));
+    display: inline-block;
+}
+
+.project-illustration {
+    scale: 130%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: calc(5 * var(--gutter));
 }
 
 #italics-link {
-    margin-left: 2em;
+    margin-left: calc(4.3 * var(--gutter));
+}
+
+#italics-illustration {
+    margin-top: -8.7em;
+    margin-left: -3.5em;
 }
 
