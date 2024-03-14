@@ -10,6 +10,10 @@
     --pink: rgb(205, 75, 147);
 }
 
+html {
+    overflow-x: hidden;
+}
+
 a {
     text-decoration: underline;
 }
@@ -26,28 +30,58 @@ body {
 
 h1 {
     font-size: calc(3.2 * var(--font-size));
-    padding-bottom: calc(2.2 * var(--gutter));
+    padding-bottom: calc(2.25 * var(--gutter));
     line-height: calc(0.85 * var(--font-size));
 }
 
 .project-title {
-    font-size: calc(1.8 * var(--font-size));
+    font-size: 8vw;
     display: inline-block;
 }
 
 .project-illustration {
-    scale: 130%;
+    scale: 135%;
     display: inline-block;
     vertical-align: middle;
-    margin-bottom: calc(5 * var(--gutter));
+    margin-bottom: calc(8 * var(--gutter));
 }
 
 #italics-link {
-    margin-left: calc(4.3 * var(--gutter));
+    margin-left: calc(4.25 * var(--gutter));
 }
 
 #italics-illustration {
-    margin-top: -8.7em;
-    margin-left: -3.5em;
+    margin-top: -8.5em;
+    margin-left: -3.2em;
 }
+
+#everything-easy-link {
+    margin-top: calc(2 * var(--gutter));
+    width: 5em;
+}
+
+#everything-easy-illustration {
+    margin-top: -18.5em;
+    margin-left: 3.15em;
+    margin-bottom: 10em;
+}
+
+#type-latin-link {
+    margin-left: 0.7em;
+}
+
+#type-latin-illustration {
+    margin-top: -3em;
+}
+
+#nirvaan-link {
+    margin-left: 4.1em;
+}
+
+#nirvaan-illustration {
+    scale: 150%;
+    margin-top: -8.7em;
+}
+
+/* desktop: on hover image appears + link color */
 
